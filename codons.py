@@ -6,6 +6,5 @@ def create_codon_dict(file_path):
         row_list = row.strip().split('\t')
         codon  = row_list[0]
         amino_acid = row_list[2]
-        print(codon, amino_acid)
         codon_dict[codon] = amino_acid
     return codon_dict
